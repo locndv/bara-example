@@ -1,10 +1,10 @@
-import {useTouchableOpacityPress, nameOfTouchableOpacity} from 'bara-react';
+import { useTouchableOpacityPress, nameOfTouchableOpacity } from "bara-react";
 
-export function useWelcome() {
+export function useWelcome(setState: (key: string, value: any) => void) {
   return useTouchableOpacityPress(
-    {nameOf: nameOfTouchableOpacity('bara-button')},
+    { nameOf: nameOfTouchableOpacity("bara-button") },
     () => {
-      console.log('Hello from Bara Button!');
-    },
+      console.log("Hello from Bara Button!");
+    }
   );
 }
